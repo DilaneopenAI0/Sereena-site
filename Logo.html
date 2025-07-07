@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sereena - Ton espace, ta voix, ton moment</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0; 
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(135deg, #f0e6f6, #d7c8f7);
+      color: #222;
+      min-height: 100vh;
+      display: flex; 
+      flex-direction: column;
+    }
+    header {
+      background: #5e4b8b;
+      color: white;
+      padding: 20px 30px;
+      display: flex; 
+      align-items: center;
+      box-shadow: 0 0 15px #5e4b8baa;
+    }
+    header img {
+      width: 60px; 
+      margin-right: 20px;
+    }
+    header h1 {
+      font-weight: 700;
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+    main {
+      flex-grow: 1;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    main h2 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      color: #4b367c;
+      text-shadow: 1px 1px 2px #d7c8f7bb;
+    }
+    main p.intro {
+      font-size: 1.2rem;
+      margin-bottom: 50px;
+      color: #3a2e5c;
+    }
+    .offers {
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .offer-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px #bba1f7bb;
+      padding: 30px 25px;
+      width: 320px;
+      transition: transform 0.3s ease;
+    }
+    .offer-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 25px #7e66dfbb;
+    }
+    .offer-card h3 {
+      font-size: 1.8rem;
+      color: #5e4b8b;
+      margin-bottom: 15px;
+      letter-spacing: 1.2px;
+    }
+    .offer-card ul {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+      font-size: 1rem;
+      color: #50457a;
+      margin-bottom: 25px;
+      line-height: 1.5;
+    }
+    .offer-card ul li::before {
+      content: "✔️";
+      margin-right: 10px;
+      color: #7e66df;
+    }
+    .price {
+      font-weight: 700;
+      font-size: 1.6rem;
+      color: #452c82;
+    }
+    .contact-buttons {
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-block;
+      padding: 15px 45px;
+      border-radius: 40px;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: white;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      user-select: none;
+    }
+    .whatsapp {
+      background: #25D366;
+    }
+    .whatsapp:hover {
+      background: #1ebe57;
+    }
+    footer {
+      background: #5e4b8b;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.9rem;
+      box-shadow: 0 -5px 15px #5e4b8bbb inset;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://cdn-icons-png.flaticon.com/512/1180/1180553.png" alt="Logo Sereena" />
+    <h1>Sereena</h1>
+  </header>
+
+  <main>
+    <h2>Ton espace, ta voix, ton moment</h2>
+    <p class="intro">Bienvenue chez Sereena, ton espace d’écoute et de coaching express.  
+    Choisis l’offre qui te convient selon ton pays pour parler, être conseillé, ou simplement te libérer.</p>
+
+    <div class="offers">
+      <section class="offer-card">
+        <h3>Offre Afrique 🇨🇮🇳🇬🇨🇲</h3>
+        <ul>
+          <li>Écoute empathique & conseils personnalisés</li>
+          <li>Tarifs adaptés au budget local</li>
+          <li>Service accessible via WhatsApp/Telegram</li>
+          <li>Petits prix pour un grand soutien</li>
+        </ul>
+        <p class="price">
+          1.000 FCFA / 1 heure<br />
+          2.000 FCFA / 2 heure 
+        </p>
+      </section>
+
+      <section class="offer-card">
+        <h3>Offre Europe 🇫🇷🇩🇪🇪🇸</h3>
+        <ul>
+          <li>Coaching professionnel et confidentiel</li>
+          <li>Service anonyme avec experts qualifiés</li>
+          <li>Paiement sécurisé & rapide</li>
+          <li>Accompagnement premium & flexible</li>
+        </ul>
+        <p class="price">
+          10 € / 1 heure<br />
+          20 € / 2 heure 
+        </p>
+      </section>
+    </div>
+
+    <div class="contact-buttons">
+      <a 
+        href="https://wa.me/22948246625?text=Salut%20Sereena%20je%20veux%20en%20savoir%20plus%20sur%20les%20offres" 
+        target="_blank" 
+        rel="noopener" 
+        class="btn whatsapp"
+        >📱 Contacte-moi sur WhatsApp</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Sereena. Tous droits réservés.
+  </footer>
+
+</body>
+</html>
